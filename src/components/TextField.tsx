@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react'
 import axios from 'axios'
-import _ from 'lodash'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import PageviewIcon from '@material-ui/icons/Pageview'
@@ -32,9 +31,7 @@ export const Text: React.FC = () => {
   }
 
   useEffect(() => {
-    if (_.isNull(Search)) {
-      console.log('null');
-    }
+    console.log('null')
   }, []);
 
 
